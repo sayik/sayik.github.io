@@ -21,7 +21,7 @@ export function ProfileHero() {
             src={portrait?.imageUrl || "https://picsum.photos/seed/sayik/800"}
             alt="Sayi Krishna PK"
             fill
-            className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            className="object-cover"
             data-ai-hint="developer portrait"
           />
         </div>

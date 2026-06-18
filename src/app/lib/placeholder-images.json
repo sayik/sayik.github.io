@@ -4,7 +4,7 @@
     {
       "id": "profile-portrait",
       "description": "Professional developer portrait",
-      "imageUrl": "https://picsum.photos/seed/sayik-portrait/800/800",
+      "imageUrl": "/developer.png",
       "imageHint": "developer portrait"
     },
     {
