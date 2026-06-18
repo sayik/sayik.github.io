@@ -23,17 +23,17 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Index</h4>
             <ul className="flex flex-col gap-2">
-              <li><Link href="/" className="text-sm hover:text-primary transition-colors">Work</Link></li>
+              <li><Link href="/#work" className="text-sm hover:text-primary transition-colors">Work</Link></li>
               <li><Link href="/blog" className="text-sm hover:text-primary transition-colors">Journal</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">Open Source</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">Contact</Link></li>
+              <li><Link href="/#open-source" className="text-sm hover:text-primary transition-colors">Open Source</Link></li>
+              <li><Link href="mailto:alex@example.com" className="text-sm hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Social</h4>
             <ul className="flex flex-col gap-2">
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">Github</Link></li>
+              <li><Link href="https://github.com" className="text-sm hover:text-primary transition-colors">Github</Link></li>
               <li><Link href="#" className="text-sm hover:text-primary transition-colors">Twitter / X</Link></li>
               <li><Link href="#" className="text-sm hover:text-primary transition-colors">LinkedIn</Link></li>
               <li><Link href="#" className="text-sm hover:text-primary transition-colors">Mastodon</Link></li>

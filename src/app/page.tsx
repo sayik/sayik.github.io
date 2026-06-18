@@ -22,7 +22,7 @@ export default function Home() {
 
           {/* Right Column: Projects & Contributions */}
           <div className="lg:col-span-8 space-y-16">
-            <section>
+            <section id="work">
               <div className="flex items-center justify-between mb-8 border-b pb-4">
                 <h2 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Selected Projects</h2>
                 <span className="text-[10px] font-headline text-muted-foreground/40">2022 — 2024</span>
@@ -30,15 +30,15 @@ export default function Home() {
               <SelectedProjects />
             </section>
 
-            <section>
+            <section id="open-source">
               <div className="flex items-center justify-between mb-8 border-b pb-4">
                 <h2 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Open Source Contributions</h2>
-                <Link href="#" className="text-[10px] font-headline uppercase tracking-[0.2em] hover:text-primary transition-colors">Github &rarr;</Link>
+                <Link href="https://github.com" className="text-[10px] font-headline uppercase tracking-[0.2em] hover:text-primary transition-colors">Github &rarr;</Link>
               </div>
               <ContributionsList />
             </section>
 
-            <section>
+            <section id="activity">
                <div className="flex items-center justify-between mb-8 border-b pb-4">
                 <h2 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Activity</h2>
                 <span className="text-[10px] font-headline text-muted-foreground/40">Last 12 Months</span>

@@ -1,21 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetHeader,
-  SheetTitle,
 } from "@/components/ui/sheet";
 
 export function Navbar({ activePath }: { activePath: string }) {
   const navLinks = [
-    { name: "Work", href: "/" },
-    { name: "Open Source", href: "https://github.com" },
+    { name: "Work", href: "/#work" },
+    { name: "Open Source", href: "/#open-source" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "mailto:alex@example.com" },
   ];
@@ -47,7 +45,7 @@ export function Navbar({ activePath }: { activePath: string }) {
           <div className="flex items-center gap-2 md:gap-4">
             <ThemeToggle />
             <Button asChild size="sm" className="hidden sm:flex rounded-full bg-foreground text-background hover:bg-foreground/90 font-headline text-xs px-6 h-9">
-              <Link href="#">CV.PDF</Link>
+              <a href="mailto:alex@example.com">HIRE ME</a>
             </Button>
             
             {/* Mobile Nav Trigger */}
