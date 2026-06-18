@@ -53,7 +53,7 @@ export function ProfileHero() {
       <div className="space-y-6">
         <h3 className="text-[10px] font-headline uppercase tracking-[0.3em] text-foreground font-black border-b-2 border-foreground pb-2 flex justify-between">
           <span>Core Stack</span>
-          <span className="text-muted-foreground">v2024.0</span>
+          <span className="text-muted-foreground">v1.0.0</span>
         </h3>
         <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech) => (
