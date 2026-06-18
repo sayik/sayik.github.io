@@ -16,11 +16,11 @@ export function ProfileHero() {
 
   return (
     <div className="space-y-8">
-      <div className="relative w-full aspect-square max-w-[280px] sm:max-w-[320px] lg:max-w-[300px] mx-auto lg:mx-0">
+      <div className="relative w-full aspect-square max-w-[200px] sm:max-w-[240px] lg:max-w-[220px] mx-auto lg:mx-0">
         <div className="w-full h-full bg-muted rounded-none overflow-hidden border-4 border-foreground relative">
           <Image
-            src={portrait?.imageUrl || "https://picsum.photos/seed/alex/800"}
-            alt="Alex Rivera"
+            src={portrait?.imageUrl || "https://picsum.photos/seed/sayi/800"}
+            alt="Sayi Krishna"
             fill
             className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             data-ai-hint="developer portrait"

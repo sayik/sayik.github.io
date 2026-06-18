@@ -9,7 +9,7 @@ This portfolio uses a **Swiss Design System** with bold typography, high-contras
 To make this portfolio your own, modify the following files:
 
 ### 1. Personal Identity & Branding
-- **`src/components/navbar.tsx`**: Update the brand name (default: "Alex Rivera") and initials in the logo.
+- **`src/components/navbar.tsx`**: Update the brand name (default: "Sayi Krishna") and initials in the logo.
 - **`src/components/footer.tsx`**: Update the name, copyright year, and social media links (GitHub, Twitter, LinkedIn).
 - **`src/components/profile-hero.tsx`**: 
     - Change your professional title (e.g., "Backend Engineer").

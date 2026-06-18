@@ -11,9 +11,9 @@ export function Footer() {
           <div className="md:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-foreground rounded-full flex items-center justify-center text-background font-headline font-bold text-sm">
-                A
+                S
               </div>
-              <span className="font-headline font-bold tracking-tight text-lg uppercase">Alex Rivera</span>
+              <span className="font-headline font-bold tracking-tight text-lg uppercase">Sayi Krishna</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Systems Architect and Software Engineer focused on high-performance distributed systems and cloud infrastructure.
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="pt-12 border-t flex flex-col md:flex-row items-center justify-between gap-8 text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground/60">
           <div className="flex flex-wrap gap-x-8 gap-y-4 justify-center md:justify-start">
-            <span>&copy; {currentYear} Alex Rivera</span>
+            <span>&copy; {currentYear} Sayi Krishna</span>
             <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Security</Link>

@@ -29,9 +29,9 @@ export function Navbar({ activePath }: { activePath: string }) {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
         <div className="flex items-center gap-4">
           <Link href="/" className="w-9 h-9 bg-foreground rounded-none flex items-center justify-center text-background font-headline font-black text-lg">
-            A
+            S
           </Link>
-          <span className="font-headline font-black tracking-tighter text-xl uppercase hidden sm:block">Alex Rivera</span>
+          <span className="font-headline font-black tracking-tighter text-xl uppercase hidden sm:block">Sayi Krishna</span>
         </div>
         
         <div className="flex items-center gap-4">
