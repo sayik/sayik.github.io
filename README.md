@@ -9,12 +9,13 @@ This portfolio uses a **Swiss Design System** with bold typography, high-contras
 To make this portfolio your own, modify the following files:
 
 ### 1. Personal Identity & Branding
-- **`src/components/navbar.tsx`**: Update the brand name (default: "Alex Rivera") and initials.
+- **`src/components/navbar.tsx`**: Update the brand name (default: "Alex Rivera") and initials in the logo.
 - **`src/components/footer.tsx`**: Update the name, copyright year, and social media links (GitHub, Twitter, LinkedIn).
 - **`src/components/profile-hero.tsx`**: 
     - Change your professional title (e.g., "Backend Engineer").
     - Update the **Core Stack** list with your specific skills and proficiency levels.
     - Update the bio description.
+    - Update the status badge if you are not currently available for hire.
 
 ### 2. Projects & Work
 - **`src/components/selected-projects.tsx`**: Update the `projects` array with your own technical projects, categories, descriptions, and tags.
@@ -22,14 +23,17 @@ To make this portfolio your own, modify the following files:
 
 ### 3. Images & Media
 - **`src/app/lib/placeholder-images.json`**: Update the image URLs and hints for your profile portrait and project screenshots. 
-- **`public/`**: Replace `cv.pdf` with your actual curriculum vitae.
+- **`public/`**: Replace `cv.pdf` with your actual curriculum vitae file.
 
 ### 4. Technical Journal (Blog)
 - **`src/app/blog/page.tsx`**: Update the `blogPosts` list with your article metadata (slugs, dates, excerpts).
 - **`src/app/blog/[slug]/page.tsx`**: Update the `blogPosts` object with the full HTML content of your technical essays.
 
 ### 5. GitHub Activity
-- **`src/components/github-contribution-graph.tsx`**: Currently uses mock data for the heatmap. In a production environment, you would fetch this from the GitHub API using your username.
+- **`src/components/github-contribution-graph.tsx`**: Currently uses mock data. To show your actual stats, you can integrate with the GitHub API or update the numbers manually for a static representation.
+
+### 6. Theme & Colors
+- **`src/app/globals.css`**: Modify the HSL values for `--primary` (Orange) and `--accent` (Green) if you want to change the brand colors.
 
 ## 🚀 Features
 - **Swiss Design System**: Bold typography and high-contrast grid layouts.
@@ -37,6 +41,4 @@ To make this portfolio your own, modify the following files:
 - **GitHub Heatmap**: Visual representation of engineering activity.
 - **CV CTA**: High-impact section for sharing professional credentials.
 - **Mobile Responsive**: Fully optimized navigation for all screen sizes.
-- **Theme Support**: Dark mode default with light mode toggle.
-
-To get started with code changes, take a look at `src/app/page.tsx`.
+- **Theme Support**: Light mode default with a smooth toggle to dark mode.
