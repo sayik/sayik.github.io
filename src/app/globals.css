@@ -4,44 +4,44 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 24 95% 53%; /* Orange highlight */
-    --primary-foreground: 210 20% 98%;
-    --secondary: 210 20% 95%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 20% 95%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 142 71% 45%; /* Green highlight */
-    --accent-foreground: 210 20% 98%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 24 95% 53%; /* Bold Orange */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 142 71% 45%; /* Deep Green */
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 0%; /* Bold Swiss Borders */
+    --input: 0 0% 90%;
     --ring: 24 95% 53%;
-    --radius: 0.5rem;
+    --radius: 0rem; /* Sharp Swiss corners */
   }
   .dark {
-    --background: 222 47% 4%;
-    --foreground: 210 20% 98%;
-    --card: 222 47% 6%;
-    --card-foreground: 210 20% 98%;
-    --popover: 222 47% 4%;
-    --popover-foreground: 210 20% 98%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 100%;
     --primary: 24 95% 53%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 222 47% 12%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 222 47% 12%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
     --accent: 142 71% 45%;
-    --accent-foreground: 210 20% 98%;
-    --border: 222 47% 12%;
-    --input: 222 47% 12%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+    --input: 0 0% 15%;
     --ring: 24 95% 53%;
   }
 }
@@ -50,11 +50,17 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline font-bold tracking-tight;
+    @apply font-headline font-bold tracking-tight uppercase;
+  }
+  section {
+    @apply scroll-mt-24; /* Ensure sticky header doesn't cover section IDs */
   }
 }
 
@@ -63,9 +69,20 @@
 }
 
 .nav-link {
-  @apply text-xs font-headline uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors relative py-1;
+  @apply text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-all relative py-1;
 }
 
 .nav-link-active {
   @apply text-foreground after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary;
+}
+
+/* Custom scrollbar for Swiss precision */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted hover:bg-muted-foreground transition-colors;
 }

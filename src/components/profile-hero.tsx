@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
+import { Badge } from "@/components/ui/badge";
 
 const techStack = [
   { name: "Go", level: "Expert" },
@@ -14,54 +15,56 @@ export function ProfileHero() {
   const portrait = PlaceHolderImages.find((img) => img.id === "profile-portrait");
 
   return (
-    <div className="space-y-10">
-      <div className="relative inline-block group">
-        <div className="w-64 h-64 md:w-full md:aspect-square bg-muted rounded-xl overflow-hidden border">
+    <div className="space-y-12">
+      <div className="relative inline-block w-full">
+        <div className="aspect-square bg-muted rounded-none overflow-hidden border-4 border-foreground">
           <Image
             src={portrait?.imageUrl || "https://picsum.photos/seed/alex/800"}
             alt="Alex Rivera"
             fill
-            className="object-cover grayscale"
+            className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             data-ai-hint="developer portrait"
           />
         </div>
         
         {/* Status Badge */}
-        <div className="absolute bottom-6 -right-4 bg-card border shadow-xl rounded-lg p-4 flex items-center gap-3 animate-in slide-in-from-bottom-2 duration-700">
+        <div className="absolute -bottom-4 -right-4 bg-accent border-2 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] p-4 flex items-center gap-3">
           <div className="relative">
-            <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-            <div className="absolute inset-0 w-2 h-2 bg-accent rounded-full animate-ping opacity-75"></div>
+            <div className="w-3 h-3 bg-white rounded-full"></div>
           </div>
           <div className="flex flex-col">
-            <span className="text-[8px] font-headline uppercase tracking-widest text-muted-foreground mb-0.5">Status</span>
-            <span className="text-[11px] font-bold text-accent whitespace-nowrap">Available for Hire</span>
+            <span className="text-[8px] font-headline uppercase tracking-[0.2em] text-white font-black mb-0.5">Status</span>
+            <span className="text-[12px] font-black text-white uppercase whitespace-nowrap">Open to Projects</span>
           </div>
         </div>
       </div>
 
-      <div className="space-y-6">
-        <h1 className="text-4xl xl:text-5xl font-bold leading-[1.1] tracking-tighter">
-          Backend Engineer & <br />
-          System Architect.
+      <div className="space-y-8">
+        <h1 className="text-5xl xl:text-6xl font-black leading-[0.9] tracking-tighter uppercase">
+          Backend <br />
+          Engineer <br />
+          <span className="text-primary">& Architect.</span>
         </h1>
-        <p className="text-muted-foreground leading-relaxed text-sm max-w-sm">
-          Building robust, scalable distributed systems with Go, Rust, and Kubernetes. 
-          Specialized in cloud-native infrastructure and high-performance APIs.
+        <p className="text-muted-foreground leading-relaxed text-base font-medium max-w-sm">
+          Designing and implementing high-availability distributed systems. Expert in cloud-native infrastructure and deterministic software.
         </p>
       </div>
 
       <div className="space-y-6">
-        <h3 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground border-b pb-2">Core Tech Stack</h3>
-        <div className="grid grid-cols-2 gap-3">
+        <h3 className="text-[10px] font-headline uppercase tracking-[0.3em] text-foreground font-black border-b-2 border-foreground pb-2 flex justify-between">
+          <span>Core Stack</span>
+          <span className="text-muted-foreground">v2024.0</span>
+        </h3>
+        <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech) => (
             <div 
               key={tech.name} 
-              className="group flex flex-col p-3 border rounded-lg bg-card hover:border-primary/50 transition-all cursor-default"
+              className="group flex flex-col p-4 border-2 border-foreground bg-card hover:bg-foreground hover:text-background transition-colors cursor-default"
             >
-              <span className="text-xs font-bold font-headline uppercase tracking-tight group-hover:text-primary transition-colors">
+              <span className="text-sm font-black font-headline uppercase tracking-tight">
                 {tech.name}
               </span>
-              <span className="text-[8px] font-headline uppercase tracking-widest text-muted-foreground/60 mt-1">
+              <span className="text-[9px] font-headline uppercase tracking-widest opacity-60 mt-1">
                 {tech.level}
               </span>
             </div>
