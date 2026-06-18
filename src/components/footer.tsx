@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="pt-12 border-t flex flex-col md:flex-row items-center justify-between gap-8 text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground/60">
           <div className="flex flex-wrap gap-x-8 gap-y-4 justify-center md:justify-start">
-            <span>&copy; {currentYear} Alex Rivera — v1.0.0</span>
+            <span>&copy; {currentYear} Alex Rivera</span>
             <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Security</Link>

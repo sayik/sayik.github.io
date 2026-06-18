@@ -1,10 +1,8 @@
-# Systemic Identity | Developer Portfolio v1.0.0
+# Systemic Identity | Developer Portfolio
 
 A high-performance portfolio for systems thinkers and software engineers, built with Next.js, Firebase, and Genkit.
 
-## Current Version: 1.0.0 (First Version)
-
-This version includes:
+This portfolio includes:
 - **Swiss Design System**: Bold typography and high-contrast grid layouts.
 - **Dynamic Journal**: Technical blog with smooth routing.
 - **GitHub Heatmap**: Real-time mock of engineering activity.
