@@ -17,9 +17,8 @@ export function Navbar({ activePath }: { activePath: string }) {
   const navLinks = [
     { name: "Work", href: "/#work" },
     { name: "Open Source", href: "/#open-source" },
-    { name: "AI Tools", href: "/#ai-tools" },
+    { name: "Activity", href: "/#activity" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "mailto:alex@example.com" },
   ];
 
   return (
@@ -61,9 +60,9 @@ export function Navbar({ activePath }: { activePath: string }) {
               </SheetTrigger>
               <SheetContent side="right" className="w-full sm:w-[400px] bg-background border-l p-0 flex flex-col">
                 <SheetHeader className="p-6 border-b text-left">
-                  <SheetTitle className="font-headline font-bold uppercase tracking-tighter text-xl">Menu</SheetTitle>
-                  <SheetDescription className="sr-only">
-                    Navigate through the portfolio and technical journal.
+                  <SheetTitle className="font-headline font-bold uppercase tracking-tighter text-xl">Navigation</SheetTitle>
+                  <SheetDescription className="text-xs text-muted-foreground uppercase tracking-widest font-headline">
+                    Access portfolio sections and technical journal.
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex-1 flex flex-col p-8 gap-6">

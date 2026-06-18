@@ -3,13 +3,12 @@ import { ProfileHero } from "@/components/profile-hero";
 import { SelectedProjects } from "@/components/selected-projects";
 import { ContributionsList } from "@/components/contributions-list";
 import { GitHubContributionGraph } from "@/components/github-contribution-graph";
-import { ImpactSynthesizer } from "@/components/impact-synthesizer";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar activePath="/" />
 
       {/* Main Content */}
@@ -29,14 +28,6 @@ export default function Home() {
                 <span className="text-[10px] font-headline text-muted-foreground/40">2022 — 2024</span>
               </div>
               <SelectedProjects />
-            </section>
-
-            <section id="ai-tools">
-              <div className="flex items-center justify-between mb-8 border-b pb-4">
-                <h2 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">AI Engineering</h2>
-                <span className="text-[10px] font-headline text-primary">Beta</span>
-              </div>
-              <ImpactSynthesizer />
             </section>
 
             <section id="open-source">

@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
-import { Terminal } from "lucide-react";
 
 const techStack = [
-  "Go", "Rust", "PostgreSQL", "K8s", "gRPC", "Redis"
+  { name: "Go", level: "Expert" },
+  { name: "Rust", level: "Expert" },
+  { name: "PostgreSQL", level: "Expert" },
+  { name: "Kubernetes", level: "Expert" },
+  { name: "gRPC", level: "Advanced" },
+  { name: "Redis", level: "Advanced" }
 ];
 
 export function ProfileHero() {
@@ -36,7 +40,7 @@ export function ProfileHero() {
       </div>
 
       <div className="space-y-6">
-        <h1 className="text-4xl xl:text-5xl font-bold leading-[1.1]">
+        <h1 className="text-4xl xl:text-5xl font-bold leading-[1.1] tracking-tighter">
           Backend Engineer & <br />
           System Architect.
         </h1>
@@ -46,12 +50,20 @@ export function ProfileHero() {
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h3 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Tech Stack</h3>
-        <div className="flex flex-wrap gap-2">
+      <div className="space-y-6">
+        <h3 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground border-b pb-2">Core Tech Stack</h3>
+        <div className="grid grid-cols-2 gap-3">
           {techStack.map((tech) => (
-            <div key={tech} className="px-3 py-1.5 border rounded-md text-[10px] font-headline uppercase tracking-wider bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground transition-all">
-              {tech}
+            <div 
+              key={tech.name} 
+              className="group flex flex-col p-3 border rounded-lg bg-card hover:border-primary/50 transition-all cursor-default"
+            >
+              <span className="text-xs font-bold font-headline uppercase tracking-tight group-hover:text-primary transition-colors">
+                {tech.name}
+              </span>
+              <span className="text-[8px] font-headline uppercase tracking-widest text-muted-foreground/60 mt-1">
+                {tech.level}
+              </span>
             </div>
           ))}
         </div>
