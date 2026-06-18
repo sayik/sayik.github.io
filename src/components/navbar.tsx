@@ -8,12 +8,16 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 
 export function Navbar({ activePath }: { activePath: string }) {
   const navLinks = [
     { name: "Work", href: "/#work" },
     { name: "Open Source", href: "/#open-source" },
+    { name: "AI Tools", href: "/#ai-tools" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "mailto:alex@example.com" },
   ];
@@ -56,9 +60,12 @@ export function Navbar({ activePath }: { activePath: string }) {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full sm:w-[400px] bg-background border-l p-0 flex flex-col">
-                <div className="p-6 border-b flex items-center justify-between">
-                  <span className="font-headline font-bold uppercase tracking-tighter text-xl">Menu</span>
-                </div>
+                <SheetHeader className="p-6 border-b text-left">
+                  <SheetTitle className="font-headline font-bold uppercase tracking-tighter text-xl">Menu</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    Navigate through the portfolio and technical journal.
+                  </SheetDescription>
+                </SheetHeader>
                 <div className="flex-1 flex flex-col p-8 gap-6">
                   {navLinks.map((link) => (
                     <Link 

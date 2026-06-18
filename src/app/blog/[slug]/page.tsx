@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 const blogPosts = {
   "optimizing-distributed-state": {
@@ -69,8 +70,9 @@ const blogPosts = {
   }
 };
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts];
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
     notFound();
