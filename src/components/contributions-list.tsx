@@ -6,8 +6,8 @@ export function ContributionsList() {
     {
       repo: "andrewtavis / kwx",
       url: "https://github.com/andrewtavis/kwx",
-      id: "PR #12",
-      label: "Merged",
+      id: "CORE UTILITIES",
+      label: "Contributor",
       stars: 77,
       type: "main"
     },
