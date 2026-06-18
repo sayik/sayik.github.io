@@ -41,8 +41,7 @@ export function ProfileHero() {
       <div className="space-y-6">
         <h1 className="text-5xl xl:text-6xl font-black leading-[0.9] tracking-tighter uppercase">
           Backend <br />
-          Engineer <br />
-          <span className="text-primary">& Architect.</span>
+          <span className="text-primary">Engineer.</span>
         </h1>
         <p className="text-muted-foreground leading-relaxed text-base font-medium max-w-sm">
           Backend Engineer specializing in Python, FastAPI, Django, PostgreSQL, AWS and Docker. Focused on high-availability cloud infrastructure.
