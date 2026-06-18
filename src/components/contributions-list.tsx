@@ -1,13 +1,19 @@
 export function ContributionsList() {
   const contributions = [
     {
-      repo: "tokio-rs / tokio",
-      id: "PR #4321",
+      repo: "tiangolo / fastapi",
+      id: "PR #12892",
       label: "Merged",
       type: "main"
     },
     {
-      repo: "kubernetes / client-go",
+      repo: "django / django",
+      id: "FIX / CORE",
+      label: "Contributor",
+      type: "secondary"
+    },
+    {
+      repo: "encode / databases",
       id: "FEATURE / REFACTOR",
       label: "Core",
       type: "secondary"

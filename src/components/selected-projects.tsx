@@ -3,16 +3,16 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    category: "High-Load API",
-    title: "StreamGrid Engine",
-    description: "Real-time data ingestion service handling 2M+ events per second with 99.9% uptime. Optimized for extreme throughput.",
-    tags: ["#GO", "#KAFKA", "#REDIS"]
+    category: "High-Performance API",
+    title: "Veloce Gateway",
+    description: "A high-performance API gateway built with FastAPI and Redis, designed to handle 500k+ requests per minute with sub-10ms latency and automated rate limiting.",
+    tags: ["#PYTHON", "#FASTAPI", "#REDIS"]
   },
   {
     category: "Infrastructure",
-    title: "AuthSentinel",
-    description: "Custom OAuth2 provider designed for microservice environments using mTLS and hardware security modules.",
-    tags: ["#RUST", "#OAUTH", "#POSTGRES"]
+    title: "Django CloudScale",
+    description: "An automated multi-cloud provisioning system built with Django and Boto3, managing large-scale AWS infrastructure and automated security patching.",
+    tags: ["#DJANGO", "#AWS", "#POSTGRES"]
   }
 ];
 
