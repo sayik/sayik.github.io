@@ -12,6 +12,14 @@ export function ContributionsList() {
       type: "main"
     },
     {
+      repo: "activist-org / activist",
+      url: "https://github.com/activist-org/activist",
+      id: "DOCKER / ORM",
+      label: "Contributor",
+      stars: 693,
+      type: "secondary"
+    },
+    {
       repo: "tiangolo / fastapi",
       url: "https://github.com/tiangolo/fastapi",
       id: "FIX / CORE",
