@@ -41,7 +41,7 @@ export function Navbar({ activePath }: { activePath: string }) {
               <Link 
                 key={link.name}
                 href={link.href} 
-                className={`nav-link ${activePath === link.href || (activePath === '/' && link.href.startsWith('/#')) ? '' : ''}`}
+                className={`nav-link ${activePath === link.href || (activePath === '/' && link.href.startsWith('/#')) ? 'nav-link-active' : ''}`}
               >
                 {link.name}
               </Link>
@@ -81,7 +81,7 @@ export function Navbar({ activePath }: { activePath: string }) {
                   ))}
                   
                   <div className="mt-auto pt-10 border-t-2 border-foreground space-y-6">
-                    <p className="text-[10px] font-headline uppercase tracking-[0.3em] text-muted-foreground font-bold">Available for technical leadership</p>
+                    <p className="text-[10px] font-headline uppercase tracking-[0.3em] text-muted-foreground font-bold">Available for hire</p>
                     <Button asChild className="w-full rounded-none bg-primary text-primary-foreground font-headline font-black h-16 text-2xl uppercase tracking-tighter shadow-none">
                       <a href="/cv.pdf" target="_blank">Download CV</a>
                     </Button>

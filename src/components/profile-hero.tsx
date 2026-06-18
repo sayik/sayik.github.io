@@ -16,8 +16,8 @@ export function ProfileHero() {
 
   return (
     <div className="space-y-12">
-      <div className="relative inline-block w-full">
-        <div className="aspect-square bg-muted rounded-none overflow-hidden border-4 border-foreground">
+      <div className="relative w-full aspect-square max-w-[320px] sm:max-w-[420px] lg:max-w-none mx-auto lg:mx-0">
+        <div className="w-full h-full bg-muted rounded-none overflow-hidden border-4 border-foreground relative">
           <Image
             src={portrait?.imageUrl || "https://picsum.photos/seed/alex/800"}
             alt="Alex Rivera"
@@ -28,13 +28,13 @@ export function ProfileHero() {
         </div>
         
         {/* Status Badge */}
-        <div className="absolute -bottom-4 -right-4 bg-accent border-2 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] p-4 flex items-center gap-3">
+        <div className="absolute -bottom-4 -right-4 bg-accent border-2 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] p-4 flex items-center gap-3 z-10">
           <div className="relative">
             <div className="w-3 h-3 bg-white rounded-full"></div>
           </div>
           <div className="flex flex-col">
             <span className="text-[8px] font-headline uppercase tracking-[0.2em] text-white font-black mb-0.5">Status</span>
-            <span className="text-[12px] font-black text-white uppercase whitespace-nowrap">Open to Projects</span>
+            <span className="text-[12px] font-black text-white uppercase whitespace-nowrap">Available for hire</span>
           </div>
         </div>
       </div>
