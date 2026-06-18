@@ -9,7 +9,6 @@ export function ContributionsList() {
       id: "CORE UTILITIES",
       label: "Contributor",
       stars: 77,
-      type: "main"
     },
     {
       repo: "activist-org / activist",
@@ -17,21 +16,18 @@ export function ContributionsList() {
       id: "DOCKER / ORM",
       label: "Contributor",
       stars: 693,
-      type: "secondary"
     },
     {
       repo: "tiangolo / fastapi",
       url: "https://github.com/tiangolo/fastapi",
       id: "FIX / CORE",
       label: "Contributor",
-      type: "secondary"
     },
     {
       repo: "django / django",
       url: "https://github.com/django/django",
       id: "CORE / REFACTOR",
       label: "Contributor",
-      type: "secondary"
     }
   ];
 
@@ -62,9 +58,7 @@ export function ContributionsList() {
               )}
             </div>
           </div>
-          <div className={`px-4 py-1 rounded-full text-[9px] font-headline uppercase tracking-widest ${
-            contribution.type === 'main' ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground'
-          }`}>
+          <div className="px-4 py-1 rounded-full text-[9px] font-headline uppercase tracking-widest bg-foreground text-background">
             {contribution.label}
           </div>
         </div>
