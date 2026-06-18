@@ -35,10 +35,19 @@ To make this portfolio your own, modify the following files:
 ### 6. Theme & Colors
 - **`src/app/globals.css`**: Modify the HSL values for `--primary` (Orange) and `--accent` (Green) if you want to change the brand colors.
 
-## 🚀 Features
+## 🚀 Deployment to GitHub Pages
+
+This app is pre-configured for **GitHub Pages**.
+
+1.  Push your code to a GitHub repository.
+2.  Enable **GitHub Actions** in your repository settings.
+3.  The workflow in `.github/workflows/deploy.yml` will automatically build and deploy the app to `https://<username>.github.io/<repo-name>/` or your custom domain.
+4.  **Important**: If you are deploying to a project page (not a user page), you may need to add `basePath: '/your-repo-name'` to `next.config.ts`.
+
+## 🎨 Design Features
 - **Swiss Design System**: Bold typography and high-contrast grid layouts.
-- **Dynamic Journal**: Technical blog with smooth routing.
+- **Dynamic Journal**: Technical blog with smooth routing (Static Export compatible).
 - **GitHub Heatmap**: Visual representation of engineering activity.
 - **CV CTA**: High-impact section for sharing professional credentials.
 - **Mobile Responsive**: Fully optimized navigation for all screen sizes.
-- **Theme Support**: Light mode default with a smooth toggle to dark mode.
+- **Light Mode Default**: Optimized for legibility and professional aesthetic.

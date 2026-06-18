@@ -4,7 +4,6 @@ import { CvCta } from "@/components/cv-cta";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
 
 const blogPosts = {
   "optimizing-distributed-state": {
@@ -70,6 +69,12 @@ const blogPosts = {
     `
   }
 };
+
+export async function generateStaticParams() {
+  return Object.keys(blogPosts).map((slug) => ({
+    slug: slug,
+  }));
+}
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
