@@ -1,40 +1,15 @@
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Navbar } from "@/components/navbar";
 import { ProfileHero } from "@/components/profile-hero";
 import { SelectedProjects } from "@/components/selected-projects";
 import { ContributionsList } from "@/components/contributions-list";
 import { GitHubContributionGraph } from "@/components/github-contribution-graph";
 import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
-          <div className="flex items-center gap-3">
-            <Link href="/" className="w-8 h-8 bg-foreground rounded-full flex items-center justify-center text-background font-headline font-bold text-sm">
-              A
-            </Link>
-            <span className="font-headline font-bold tracking-tight text-lg uppercase">Alex Rivera</span>
-          </div>
-          <div className="flex items-center gap-10">
-            <div className="hidden md:flex items-center gap-8">
-              <Link href="/" className="nav-link nav-link-active">Work</Link>
-              <Link href="#" className="nav-link">Open Source</Link>
-              <Link href="/blog" className="nav-link">Blog</Link>
-              <Link href="#" className="nav-link">Contact</Link>
-            </div>
-            <div className="flex items-center gap-4">
-              <ThemeToggle />
-              <Button size="sm" className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-headline text-xs px-6 h-9">
-                CV.PDF
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar activePath="/" />
 
       {/* Main Content */}
       <main className="container mx-auto px-6 max-w-7xl pt-16 pb-20">

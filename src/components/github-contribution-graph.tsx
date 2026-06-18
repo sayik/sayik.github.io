@@ -9,6 +9,7 @@ export function GitHubContributionGraph() {
 
   return (
     <div className="space-y-8">
+      {/* commit github counter */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="space-y-1">
           <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Total Commits</span>
