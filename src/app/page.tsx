@@ -6,6 +6,7 @@ import { GitHubContributionGraph } from "@/components/github-contribution-graph"
 import { Footer } from "@/components/footer";
 import { CvCta } from "@/components/cv-cta";
 import Link from "next/link";
+import { Github } from "lucide-react";
 
 export default function Home() {
   return (
@@ -34,7 +35,14 @@ export default function Home() {
             <section id="open-source">
               <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Open Source Contributions</h2>
-                <Link href="https://github.com" className="text-[10px] font-headline uppercase tracking-widest hover:text-primary transition-all font-black">GITHUB &rarr;</Link>
+                <Link 
+                  href="https://github.com/sayik" 
+                  target="_blank" 
+                  className="flex items-center gap-2 text-[10px] font-headline uppercase tracking-widest hover:text-primary transition-all font-black"
+                >
+                  <Github className="w-3 h-3" />
+                  GITHUB &rarr;
+                </Link>
               </div>
               <ContributionsList />
             </section>
@@ -44,6 +52,7 @@ export default function Home() {
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Activity Heatmap</h2>
                 <span className="text-[10px] font-headline text-muted-foreground/40 font-bold tracking-widest uppercase">Last 12 Months</span>
               </div>
+              {/* NOTE: To update this heatmap with real data, integrate the GitHub GraphQL API in src/components/github-contribution-graph.tsx */}
               <GitHubContributionGraph />
             </section>
           </div>

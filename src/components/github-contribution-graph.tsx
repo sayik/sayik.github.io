@@ -1,5 +1,14 @@
 export function GitHubContributionGraph() {
-  // Mock contribution data
+  /**
+   * DEVELOPER NOTE: DATA SOURCE
+   * 
+   * Currently, this graph uses mock data generated randomly for UI presentation.
+   * To display real GitHub contributions:
+   * 1. Use the GitHub GraphQL API (User -> contributionsCollection -> contributionCalendar)
+   * 2. Or use a library like 'react-github-calendar' or 'github-calendar-api'
+   * 3. Replace the 'contributionGrid' map below with your fetched data.
+   */
+  
   const weeks = 52;
   const daysPerWeek = 7;
   const contributionGrid = Array.from({ length: weeks * daysPerWeek }).map(() => {
