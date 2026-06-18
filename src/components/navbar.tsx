@@ -47,8 +47,8 @@ export function Navbar({ activePath }: { activePath: string }) {
 
           <div className="flex items-center gap-2 md:gap-4">
             <ThemeToggle />
-            <Button asChild size="sm" className="hidden sm:flex rounded-full bg-foreground text-background hover:bg-foreground/90 font-headline text-xs px-6 h-9">
-              <a href="mailto:alex@example.com">HIRE ME</a>
+            <Button asChild size="sm" className="hidden sm:flex rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-headline text-xs px-6 h-9">
+              <a href="/cv.pdf" target="_blank">GET CV</a>
             </Button>
             
             {/* Mobile Nav Trigger */}
@@ -78,8 +78,8 @@ export function Navbar({ activePath }: { activePath: string }) {
                   
                   <div className="mt-auto pt-10 border-t space-y-4">
                     <p className="text-[10px] font-headline uppercase tracking-widest text-muted-foreground">Available for projects</p>
-                    <Button asChild className="w-full rounded-full bg-foreground text-background font-headline h-14 text-lg uppercase tracking-tighter">
-                      <a href="mailto:alex@example.com">Hire Alex Rivera</a>
+                    <Button asChild className="w-full rounded-full bg-primary text-primary-foreground font-headline h-14 text-lg uppercase tracking-tighter">
+                      <a href="/cv.pdf" target="_blank">Download CV</a>
                     </Button>
                   </div>
                 </div>

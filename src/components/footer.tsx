@@ -5,7 +5,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-background pt-24 pb-12">
+    <footer className="bg-background pt-24 pb-12">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
           <div className="md:col-span-4 space-y-6">
@@ -26,7 +26,7 @@ export function Footer() {
               <li><Link href="/#work" className="text-sm hover:text-primary transition-colors">Work</Link></li>
               <li><Link href="/blog" className="text-sm hover:text-primary transition-colors">Journal</Link></li>
               <li><Link href="/#open-source" className="text-sm hover:text-primary transition-colors">Open Source</Link></li>
-              <li><Link href="mailto:alex@example.com" className="text-sm hover:text-primary transition-colors">Contact</Link></li>
+              <li><Link href="/cv.pdf" target="_blank" className="text-sm hover:text-primary transition-colors">Curriculum Vitae</Link></li>
             </ul>
           </div>
 

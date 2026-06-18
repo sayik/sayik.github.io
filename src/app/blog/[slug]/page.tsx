@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CvCta } from "@/components/cv-cta";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -107,20 +108,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
-
-        <section className="mt-24 pt-12 border-t">
-          <div className="bg-card border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="space-y-2 text-center md:text-left">
-              <h3 className="text-2xl font-bold font-headline">Have a project in mind?</h3>
-              <p className="text-muted-foreground">I'm currently available for architecture reviews and systems engineering.</p>
-            </div>
-            <Button asChild className="rounded-full bg-primary text-primary-foreground font-headline px-10 h-14 uppercase tracking-widest">
-              <a href="mailto:alex@example.com">Let's Talk</a>
-            </Button>
-          </div>
-        </section>
       </main>
 
+      <CvCta />
       <Footer />
     </div>
   );

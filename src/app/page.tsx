@@ -4,6 +4,7 @@ import { SelectedProjects } from "@/components/selected-projects";
 import { ContributionsList } from "@/components/contributions-list";
 import { GitHubContributionGraph } from "@/components/github-contribution-graph";
 import { Footer } from "@/components/footer";
+import { CvCta } from "@/components/cv-cta";
 import Link from "next/link";
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
         </div>
       </main>
 
+      <CvCta />
       <Footer />
     </div>
   );
