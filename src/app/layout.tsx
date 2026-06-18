@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Systemic Identity | Developer Portfolio',
-  description: 'A high-performance portfolio for systems thinkers and software engineers.',
+  title: 'Sayi Krishna PK | Backend Engineer',
+  description: 'Backend Engineer specializing in Python, FastAPI, Django, PostgreSQL, AWS and Docker.',
 };
 
 export default function RootLayout({

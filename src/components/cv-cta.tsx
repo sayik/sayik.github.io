@@ -12,14 +12,21 @@ export function CvCta() {
           Interested in my <br /> technical journey?
         </h2>
         <p className="text-xl md:text-2xl font-body max-w-2xl opacity-90">
-          Download my full curriculum vitae to see my systems engineering experience and distributed architecture expertise.
+          Download my full curriculum vitae to see my backend engineering experience and Python expertise.
         </p>
-        <Button asChild className="rounded-full bg-background text-foreground hover:bg-background/90 font-headline px-12 h-16 text-lg uppercase tracking-widest group border-none">
-          <a href="/cv.pdf" target="_blank">
-            Download CV
-            <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </Button>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button asChild className="rounded-none bg-background text-foreground hover:bg-background/90 font-headline px-12 h-16 text-lg uppercase tracking-widest group border-none">
+            <a href="/cv.pdf" target="_blank">
+              Download CV
+              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
+          <Button asChild variant="outline" className="rounded-none bg-transparent text-primary-foreground hover:bg-primary-foreground/10 border-2 border-primary-foreground font-headline px-12 h-16 text-lg uppercase tracking-widest group">
+            <a href="mailto:sayi_pk@outlook.com">
+              Contact Me
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );

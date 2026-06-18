@@ -13,10 +13,10 @@ export function Footer() {
               <div className="w-8 h-8 bg-foreground rounded-full flex items-center justify-center text-background font-headline font-bold text-sm">
                 S
               </div>
-              <span className="font-headline font-bold tracking-tight text-lg uppercase">Sayi Krishna</span>
+              <span className="font-headline font-bold tracking-tight text-lg uppercase">Sayi Krishna PK</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Systems Architect and Software Engineer focused on high-performance distributed systems and cloud infrastructure.
+              Backend Engineer specializing in high-performance distributed systems, Python, and cloud infrastructure.
             </p>
           </div>
 
@@ -33,10 +33,10 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Social</h4>
             <ul className="flex flex-col gap-2">
-              <li><Link href="https://github.com" className="text-sm hover:text-primary transition-colors">Github</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">Twitter / X</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">LinkedIn</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary transition-colors">Mastodon</Link></li>
+              <li><Link href="https://github.com/sayik" className="text-sm hover:text-primary transition-colors" target="_blank">Github</Link></li>
+              <li><Link href="https://x.com/sayikrishna_pk" className="text-sm hover:text-primary transition-colors" target="_blank">Twitter / X</Link></li>
+              <li><Link href="https://www.linkedin.com/in/sayi-krishna-pk" className="text-sm hover:text-primary transition-colors" target="_blank">LinkedIn</Link></li>
+              <li><Link href="mailto:sayi_pk@outlook.com" className="text-sm hover:text-primary transition-colors">Email</Link></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="pt-12 border-t flex flex-col md:flex-row items-center justify-between gap-8 text-[10px] font-headline uppercase tracking-[0.2em] text-muted-foreground/60">
           <div className="flex flex-wrap gap-x-8 gap-y-4 justify-center md:justify-start">
-            <span>&copy; {currentYear} Sayi Krishna</span>
+            <span>&copy; {currentYear} Sayi Krishna PK</span>
             <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Security</Link>

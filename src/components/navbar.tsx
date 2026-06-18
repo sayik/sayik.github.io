@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
@@ -24,6 +24,8 @@ export function Navbar({ activePath }: { activePath: string }) {
     { name: "Blog", href: "/blog" },
   ];
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b-2 border-foreground/10">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
@@ -31,7 +33,7 @@ export function Navbar({ activePath }: { activePath: string }) {
           <Link href="/" className="w-9 h-9 bg-foreground rounded-none flex items-center justify-center text-background font-headline font-black text-lg">
             S
           </Link>
-          <span className="font-headline font-black tracking-tighter text-xl uppercase hidden sm:block">Sayi Krishna</span>
+          <span className="font-headline font-black tracking-tighter text-xl uppercase hidden sm:block">Sayi Krishna PK</span>
         </div>
         
         <div className="flex items-center gap-4">
@@ -65,7 +67,7 @@ export function Navbar({ activePath }: { activePath: string }) {
                 <SheetHeader className="p-8 border-b-2 border-foreground text-left">
                   <SheetTitle className="font-headline font-black uppercase tracking-tighter text-3xl">Navigation</SheetTitle>
                   <SheetDescription className="text-xs text-muted-foreground uppercase tracking-widest font-headline font-bold">
-                    SYSTEMS ARCHITECT // TECHNICAL JOURNAL
+                    BACKEND ENGINEER // SAYI KRISHNA PK
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex-1 flex flex-col p-8 gap-8">
@@ -73,7 +75,7 @@ export function Navbar({ activePath }: { activePath: string }) {
                     <Link 
                       key={link.name}
                       href={link.href} 
-                      onClick={() => setIsOpen(false)}
+                      onClick={closeMenu}
                       className="text-6xl font-black font-headline uppercase tracking-tighter hover:text-primary transition-all active:scale-95"
                     >
                       {link.name}

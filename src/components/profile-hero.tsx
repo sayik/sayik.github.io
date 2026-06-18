@@ -1,14 +1,13 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
-import { Badge } from "@/components/ui/badge";
 
 const techStack = [
-  { name: "Go", level: "Expert" },
-  { name: "Rust", level: "Expert" },
+  { name: "Python", level: "Expert" },
+  { name: "FastAPI", level: "Expert" },
+  { name: "Django", level: "Advanced" },
   { name: "PostgreSQL", level: "Expert" },
-  { name: "Kubernetes", level: "Expert" },
-  { name: "gRPC", level: "Advanced" },
-  { name: "Redis", level: "Advanced" }
+  { name: "AWS", level: "Advanced" },
+  { name: "Docker", level: "Expert" }
 ];
 
 export function ProfileHero() {
@@ -19,8 +18,8 @@ export function ProfileHero() {
       <div className="relative w-full aspect-square max-w-[200px] sm:max-w-[240px] lg:max-w-[220px] mx-auto lg:mx-0">
         <div className="w-full h-full bg-muted rounded-none overflow-hidden border-4 border-foreground relative">
           <Image
-            src={portrait?.imageUrl || "https://picsum.photos/seed/sayi/800"}
-            alt="Sayi Krishna"
+            src={portrait?.imageUrl || "https://picsum.photos/seed/sayik/800"}
+            alt="Sayi Krishna PK"
             fill
             className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             data-ai-hint="developer portrait"
@@ -46,14 +45,14 @@ export function ProfileHero() {
           <span className="text-primary">& Architect.</span>
         </h1>
         <p className="text-muted-foreground leading-relaxed text-base font-medium max-w-sm">
-          Designing and implementing high-availability distributed systems. Expert in cloud-native infrastructure and deterministic software.
+          Backend Engineer specializing in Python, FastAPI, Django, PostgreSQL, AWS and Docker. Focused on high-availability cloud infrastructure.
         </p>
       </div>
 
       <div className="space-y-4">
         <h3 className="text-[10px] font-headline uppercase tracking-[0.3em] text-foreground font-black border-b-2 border-foreground pb-2 flex justify-between">
           <span>Core Stack</span>
-          <span className="text-muted-foreground">Systems Architect</span>
+          <span className="text-muted-foreground">Systems Specialist</span>
         </h3>
         <div className="grid grid-cols-2 gap-4">
           {techStack.map((tech) => (
