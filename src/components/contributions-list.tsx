@@ -22,12 +22,6 @@ export function ContributionsList() {
       url: "https://github.com/tiangolo/fastapi",
       id: "FIX / CORE",
       label: "Contributor",
-    },
-    {
-      repo: "django / django",
-      url: "https://github.com/django/django",
-      id: "CORE / REFACTOR",
-      label: "Contributor",
     }
   ];
 
