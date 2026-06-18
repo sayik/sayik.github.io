@@ -6,13 +6,15 @@ const projects = [
     category: "High-Performance API",
     title: "Veloce Gateway",
     description: "A high-performance API gateway built with FastAPI and Redis, designed to handle 500k+ requests per minute with sub-10ms latency and automated rate limiting.",
-    tags: ["#PYTHON", "#FASTAPI", "#REDIS"]
+    tags: ["#PYTHON", "#FASTAPI", "#REDIS"],
+    link: "https://github.com/sayik"
   },
   {
-    category: "Infrastructure",
-    title: "Django CloudScale",
-    description: "An automated multi-cloud provisioning system built with Django and Boto3, managing large-scale AWS infrastructure and automated security patching.",
-    tags: ["#DJANGO", "#AWS", "#POSTGRES"]
+    category: "AI-Based Knowledge Infrastructure",
+    title: "Clavis",
+    description: "An intelligent personal knowledge and productivity management platform that combines secure cloud storage, note management, and AI-assisted organization into a single backend system.",
+    tags: ["#FASTAPI", "#AWS", "#AI", "#POSTGRES"],
+    link: "https://github.com/sayik/clavis"
   }
 ];
 
@@ -26,11 +28,15 @@ export function SelectedProjects() {
               <span className="text-[10px] font-headline uppercase tracking-[0.2em] text-primary font-black">
                 {project.category}
               </span>
-              <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+              <Link href={project.link} target="_blank">
+                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+              </Link>
             </div>
-            <h3 className="text-2xl font-black font-headline uppercase tracking-tighter leading-none">
-              {project.title}
-            </h3>
+            <Link href={project.link} target="_blank" className="block">
+              <h3 className="text-2xl font-black font-headline uppercase tracking-tighter leading-none group-hover:text-primary transition-colors">
+                {project.title}
+              </h3>
+            </Link>
             <p className="text-sm text-muted-foreground leading-relaxed font-medium">
               {project.description}
             </p>
