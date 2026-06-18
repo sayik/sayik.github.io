@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "optimizing-distributed-state",
     date: "2024.05.12",
     title: "Optimizing Distributed State in Low-Latency Environments",
     category: "Architecture",
@@ -13,6 +13,7 @@ const blogPosts = [
     excerpt: "Exploring the trade-offs between linearizability and availability in high-throughput messaging systems."
   },
   {
+    slug: "deterministic-builds",
     date: "2024.04.08",
     title: "The Case for Deterministic Builds in Modern CI/CD",
     category: "Infrastructure",
@@ -20,6 +21,7 @@ const blogPosts = [
     excerpt: "Why hermetic toolchains are the foundation of reliable infrastructure deployment."
   },
   {
+    slug: "memory-safety",
     date: "2024.03.20",
     title: "Memory Safety in System Software: From C++ to Rust",
     category: "Systems",
@@ -27,6 +29,7 @@ const blogPosts = [
     excerpt: "A technical transition guide for engineers moving to memory-safe language primitives."
   },
   {
+    slug: "zero-trust-networking",
     date: "2024.02.15",
     title: "Zero-Trust Networking with WireGuard and gRPC",
     category: "Security",
@@ -55,7 +58,7 @@ export default function BlogPage() {
         <div className="space-y-12">
           {blogPosts.map((post) => (
             <article key={post.title} className="group border-b pb-12 last:border-0">
-              <Link href="#" className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <Link href={`/blog/${post.slug}`} className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
                 <div className="md:col-span-2 text-[10px] font-headline uppercase tracking-widest text-muted-foreground pt-2">
                   {post.date}
                 </div>

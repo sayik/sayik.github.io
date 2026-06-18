@@ -15,9 +15,9 @@ import {
 export function Navbar({ activePath }: { activePath: string }) {
   const navLinks = [
     { name: "Work", href: "/" },
-    { name: "Open Source", href: "#" },
+    { name: "Open Source", href: "https://github.com" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "mailto:alex@example.com" },
   ];
 
   return (
@@ -46,8 +46,8 @@ export function Navbar({ activePath }: { activePath: string }) {
 
           <div className="flex items-center gap-2 md:gap-4">
             <ThemeToggle />
-            <Button size="sm" className="hidden sm:flex rounded-full bg-foreground text-background hover:bg-foreground/90 font-headline text-xs px-6 h-9">
-              CV.PDF
+            <Button asChild size="sm" className="hidden sm:flex rounded-full bg-foreground text-background hover:bg-foreground/90 font-headline text-xs px-6 h-9">
+              <Link href="#">CV.PDF</Link>
             </Button>
             
             {/* Mobile Nav Trigger */}
@@ -74,8 +74,8 @@ export function Navbar({ activePath }: { activePath: string }) {
                   
                   <div className="mt-auto pt-10 border-t space-y-4">
                     <p className="text-[10px] font-headline uppercase tracking-widest text-muted-foreground">Available for projects</p>
-                    <Button className="w-full rounded-full bg-foreground text-background font-headline h-14 text-lg uppercase tracking-tighter">
-                      Hire Alex Rivera
+                    <Button asChild className="w-full rounded-full bg-foreground text-background font-headline h-14 text-lg uppercase tracking-tighter">
+                      <a href="mailto:alex@example.com">Hire Alex Rivera</a>
                     </Button>
                   </div>
                 </div>
