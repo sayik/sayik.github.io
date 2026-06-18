@@ -15,8 +15,8 @@ export function ProfileHero() {
   const portrait = PlaceHolderImages.find((img) => img.id === "profile-portrait");
 
   return (
-    <div className="space-y-12">
-      <div className="relative w-full aspect-square max-w-[320px] sm:max-w-[420px] lg:max-w-none mx-auto lg:mx-0">
+    <div className="space-y-8">
+      <div className="relative w-full aspect-square max-w-[280px] sm:max-w-[320px] lg:max-w-[300px] mx-auto lg:mx-0">
         <div className="w-full h-full bg-muted rounded-none overflow-hidden border-4 border-foreground relative">
           <Image
             src={portrait?.imageUrl || "https://picsum.photos/seed/alex/800"}
@@ -39,7 +39,7 @@ export function ProfileHero() {
         </div>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-6">
         <h1 className="text-5xl xl:text-6xl font-black leading-[0.9] tracking-tighter uppercase">
           Backend <br />
           Engineer <br />
@@ -50,7 +50,7 @@ export function ProfileHero() {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         <h3 className="text-[10px] font-headline uppercase tracking-[0.3em] text-foreground font-black border-b-2 border-foreground pb-2 flex justify-between">
           <span>Core Stack</span>
           <span className="text-muted-foreground">Systems Architect</span>

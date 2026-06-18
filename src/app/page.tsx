@@ -22,7 +22,7 @@ export default function Home() {
           </aside>
 
           {/* Right Column: Projects & Contributions */}
-          <div className="lg:col-span-8 space-y-32">
+          <div className="lg:col-span-8 space-y-20">
             <section id="work">
               <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Selected Projects</h2>
