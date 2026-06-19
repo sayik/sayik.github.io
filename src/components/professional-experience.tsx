@@ -9,19 +9,19 @@ export function ProfessionalExperience() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div className="relative">
         <div 
           className={cn(
-            "prose prose-invert max-w-none font-body text-muted-foreground leading-relaxed text-lg transition-all duration-500 overflow-hidden",
-            !isExpanded && "max-h-[120px]"
+            "prose prose-invert max-w-none font-body text-foreground leading-relaxed text-lg transition-all duration-500 overflow-hidden",
+            !isExpanded && "max-h-[140px]"
           )}
         >
-          <p className="text-foreground font-medium mb-6">
+          <p className="font-medium mb-4">
             I'm a Python developer focused on backend systems, APIs, automation, and open-source software. Through freelance development work and open-source contributions, I've built and maintained applications using modern web technologies, with an emphasis on software architecture, reliability, maintainability, and practical problem-solving.
           </p>
           
-          <div className="space-y-6">
+          <div className="space-y-4 text-foreground/90">
             <p>
               I have worked with clients and collaborators across multiple countries, building strong working relationships through clear communication, stakeholder coordination, and professional correspondence. Regular interaction with people from diverse backgrounds helped me develop the ability to understand requirements, manage expectations, resolve issues constructively, and communicate effectively across cultures, time zones, and technical backgrounds. In addition, I have experience managing business documentation, certifications, agreements, and other operational records that support project execution and organizational compliance.
             </p>
@@ -35,7 +35,7 @@ export function ProfessionalExperience() {
         </div>
 
         {!isExpanded && (
-          <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-background to-transparent pointer-events-none" />
         )}
       </div>
 

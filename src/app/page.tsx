@@ -24,16 +24,16 @@ export default function Home() {
           </aside>
 
           {/* Right Column: Experience, Projects & Contributions */}
-          <div className="lg:col-span-8 space-y-20">
+          <div className="lg:col-span-8 space-y-16">
             <section id="experience">
-              <div className="flex items-center justify-between mb-6 border-b-2 border-foreground pb-4">
+              <div className="flex items-center justify-between mb-4 border-b-2 border-foreground pb-2">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Professional Experience</h2>
               </div>
               <ProfessionalExperience />
             </section>
 
             <section id="work">
-              <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
+              <div className="flex items-center justify-between mb-8 border-b-2 border-foreground pb-2">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Selected Projects</h2>
                 <span className="text-[10px] font-headline text-muted-foreground/40 font-bold tracking-widest">2022 — 2024</span>
               </div>
@@ -60,7 +60,11 @@ export default function Home() {
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Activity Heatmap</h2>
                 <span className="text-[10px] font-headline text-muted-foreground/40 font-bold tracking-widest uppercase">Last 12 Months</span>
               </div>
-              {/* NOTE: To update this heatmap with real data, integrate the GitHub GraphQL API in src/components/github-contribution-graph.tsx */}
+              {/* DEVELOPER NOTE: DATA SOURCE
+               * Currently, this graph uses mock data. To integrate real stats:
+               * 1. Use GitHub GraphQL API (contributionCalendar)
+               * 2. Replace the data mapping in src/components/github-contribution-graph.tsx
+               */}
               <GitHubContributionGraph />
             </section>
           </div>
