@@ -3,6 +3,7 @@ import { ProfileHero } from "@/components/profile-hero";
 import { SelectedProjects } from "@/components/selected-projects";
 import { ContributionsList } from "@/components/contributions-list";
 import { GitHubContributionGraph } from "@/components/github-contribution-graph";
+import { ProfessionalExperience } from "@/components/professional-experience";
 import { Footer } from "@/components/footer";
 import { CvCta } from "@/components/cv-cta";
 import Link from "next/link";
@@ -22,8 +23,15 @@ export default function Home() {
             <ProfileHero />
           </aside>
 
-          {/* Right Column: Projects & Contributions */}
+          {/* Right Column: Experience, Projects & Contributions */}
           <div className="lg:col-span-8 space-y-20">
+            <section id="experience">
+              <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
+                <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Professional Experience</h2>
+              </div>
+              <ProfessionalExperience />
+            </section>
+
             <section id="work">
               <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Selected Projects</h2>
