@@ -21,9 +21,9 @@ export function ProfessionalExperience() {
             I'm a Python developer focused on backend systems, APIs, automation, and open-source software. Through freelance development work and open-source contributions, I've built and maintained applications using modern web technologies, with an emphasis on software architecture, reliability, maintainability, and practical problem-solving.
           </p>
           
-          <div className="space-y-4 text-foreground/90">
+          <div className="space-y-4 text-foreground">
             <p>
-              I have worked with clients and collaborators across multiple countries, building strong working relationships through clear communication, stakeholder coordination, and professional correspondence. Regular interaction with people from diverse backgrounds helped me develop the ability to understand requirements, manage expectations, resolve issues constructively, and communicate effectively across cultures, time zones, and technical backgrounds. In addition, I have experience managing business documentation, certifications, agreements, and other operational records that support project execution and organizational compliance.
+              I have worked with clients and collaborators across multiple countries, building strong working relationships through clear communication, stakeholder coordination, and professional correspondence. Regular interaction with people from diverse backgrounds helped me develop the ability to understand requirements, manage expectations, resolve issues constructively, and communicate effectively across cultures, time zones, and technical backgrounds. In addition, I have experience managing business documentation, certifications, agreements, and other organizational records that support project execution and organizational compliance.
             </p>
             <p>
               Beyond software development, I have experience leading operational teams, coordinating workflows, and ensuring projects and day-to-day activities were delivered efficiently. These responsibilities strengthened my ability to organize work, communicate clearly, and collaborate effectively across diverse teams.
