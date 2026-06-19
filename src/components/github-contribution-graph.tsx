@@ -21,20 +21,20 @@ export function GitHubContributionGraph() {
       {/* commit github counter */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="space-y-1">
-          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Total Commits</span>
-          <p className="text-2xl font-bold font-headline">2,481</p>
+          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground font-bold">Total Commits</span>
+          <p className="text-2xl font-bold font-headline text-foreground">2,481</p>
         </div>
         <div className="space-y-1">
-          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Longest Streak</span>
-          <p className="text-2xl font-bold font-headline">42 Days</p>
+          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground font-bold">Longest Streak</span>
+          <p className="text-2xl font-bold font-headline text-foreground">42 Days</p>
         </div>
         <div className="space-y-1">
-          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground">Public Repos</span>
-          <p className="text-2xl font-bold font-headline">64</p>
+          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground font-bold">Public Repos</span>
+          <p className="text-2xl font-bold font-headline text-foreground">64</p>
         </div>
         <div className="space-y-1">
-          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground">PRs Merged</span>
-          <p className="text-2xl font-bold font-headline">112</p>
+          <span className="text-[9px] font-headline uppercase tracking-[0.2em] text-muted-foreground font-bold">PRs Merged</span>
+          <p className="text-2xl font-bold font-headline text-foreground">112</p>
         </div>
       </div>
 
@@ -51,21 +51,21 @@ export function GitHubContributionGraph() {
                 return (
                   <div 
                     key={dayIndex} 
-                    className={`w-[11px] h-[11px] rounded-[1.5px] ${opacity} hover:ring-1 hover:ring-primary transition-all duration-300`}
+                    className={`w-[11px] h-[11px] rounded-none ${opacity} hover:ring-1 hover:ring-primary transition-all duration-300`}
                   />
                 );
               })}
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between mt-4 text-[9px] font-headline uppercase text-muted-foreground max-w-[150px]">
+        <div className="flex items-center justify-between mt-4 text-[9px] font-headline uppercase text-muted-foreground font-bold max-w-[150px]">
           <span>Less</span>
           <div className="flex gap-[3px]">
-            <div className="w-[10px] h-[10px] rounded-[1px] bg-muted/30"></div>
-            <div className="w-[10px] h-[10px] rounded-[1px] bg-accent/30"></div>
-            <div className="w-[10px] h-[10px] rounded-[1px] bg-accent/50"></div>
-            <div className="w-[10px] h-[10px] rounded-[1px] bg-accent/80"></div>
-            <div className="w-[10px] h-[10px] rounded-[1px] bg-accent"></div>
+            <div className="w-[10px] h-[10px] bg-muted/30"></div>
+            <div className="w-[10px] h-[10px] bg-accent/30"></div>
+            <div className="w-[10px] h-[10px] bg-accent/50"></div>
+            <div className="w-[10px] h-[10px] bg-accent/80"></div>
+            <div className="w-[10px] h-[10px] bg-accent"></div>
           </div>
           <span>More</span>
         </div>

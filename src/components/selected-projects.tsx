@@ -29,21 +29,21 @@ export function SelectedProjects() {
                 {project.category}
               </span>
               <Link href={project.link} target="_blank">
-                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
+                <ArrowUpRight className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
               </Link>
             </div>
             <Link href={project.link} target="_blank" className="block">
-              <h3 className="text-2xl font-black font-headline uppercase tracking-tighter leading-none group-hover:text-primary transition-colors">
+              <h3 className="text-2xl font-black font-headline uppercase tracking-tighter leading-none group-hover:text-primary transition-colors text-foreground">
                 {project.title}
               </h3>
             </Link>
-            <p className="text-sm text-muted-foreground leading-relaxed font-medium">
+            <p className="text-sm text-foreground leading-relaxed font-medium">
               {project.description}
             </p>
           </div>
           <div className="flex flex-wrap gap-4 pt-8">
             {project.tags.map(tag => (
-              <span key={tag} className="text-[10px] font-headline font-black text-foreground/40 tracking-widest">
+              <span key={tag} className="text-[10px] font-headline font-black text-muted-foreground tracking-widest">
                 {tag}
               </span>
             ))}

@@ -30,18 +30,18 @@ export function ContributionsList() {
       {contributions.map((contribution) => (
         <div 
           key={contribution.repo} 
-          className="flex items-center justify-between p-6 rounded-xl border bg-card/50 hover:bg-card transition-colors group"
+          className="flex items-center justify-between p-6 rounded-none border-2 border-foreground bg-card hover:bg-muted transition-colors group"
         >
           <div className="flex flex-col gap-1">
             <Link 
               href={contribution.url} 
               target="_blank" 
-              className="text-sm font-bold font-headline group-hover:text-primary transition-colors hover:underline underline-offset-4"
+              className="text-sm font-bold font-headline group-hover:text-primary transition-colors hover:underline underline-offset-4 text-foreground"
             >
               {contribution.repo}
             </Link>
             <div className="flex items-center gap-3">
-              <span className="text-[10px] font-headline text-muted-foreground/40 uppercase tracking-widest">
+              <span className="text-[10px] font-headline text-muted-foreground uppercase tracking-widest font-bold">
                 {contribution.id}
               </span>
               {contribution.stars && (
@@ -52,7 +52,7 @@ export function ContributionsList() {
               )}
             </div>
           </div>
-          <div className="px-4 py-1 rounded-full text-[9px] font-headline uppercase tracking-widest bg-foreground text-background">
+          <div className="px-4 py-1 rounded-none text-[9px] font-headline uppercase tracking-widest bg-foreground text-background font-black">
             {contribution.label}
           </div>
         </div>
