@@ -24,7 +24,7 @@ export default function Home() {
           </aside>
 
           {/* Right Column: Experience, Projects & Contributions */}
-          <div className="lg:col-span-8 space-y-16">
+          <div className="lg:col-span-8 space-y-12">
             <section id="experience">
               <div className="flex items-center justify-between mb-4 border-b-2 border-foreground pb-2">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black text-foreground">Professional Experience</h2>
@@ -35,7 +35,7 @@ export default function Home() {
             <section id="work">
               <div className="flex items-center justify-between mb-8 border-b-2 border-foreground pb-2">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black text-foreground">Selected Projects</h2>
-                <span className="text-[10px] font-headline text-muted-foreground font-bold tracking-widest">2022 — 2024</span>
+                <span className="text-[10px] font-headline text-foreground font-bold tracking-widest uppercase">2025 — present</span>
               </div>
               <SelectedProjects />
             </section>
@@ -58,7 +58,7 @@ export default function Home() {
             <section id="activity">
                <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black text-foreground">Activity Heatmap</h2>
-                <span className="text-[10px] font-headline text-muted-foreground font-bold tracking-widest uppercase">Last 12 Months</span>
+                <span className="text-[10px] font-headline text-foreground font-bold tracking-widest uppercase">Last 12 Months</span>
               </div>
               <GitHubContributionGraph />
             </section>
