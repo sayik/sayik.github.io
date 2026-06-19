@@ -14,7 +14,7 @@ export function ProfessionalExperience() {
         <div 
           className={cn(
             "prose prose-invert max-w-none font-body text-foreground leading-relaxed text-lg transition-all duration-500 overflow-hidden",
-            !isExpanded && "max-h-[140px]"
+            !isExpanded && "max-h-[220px]"
           )}
         >
           <p className="font-medium mb-4">
