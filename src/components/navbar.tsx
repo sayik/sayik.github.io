@@ -29,11 +29,13 @@ export function Navbar({ activePath }: { activePath: string }) {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b-2 border-foreground/10">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
           <Link href="/" className="w-9 h-9 bg-foreground rounded-none flex items-center justify-center text-background font-headline font-black text-lg">
             S
           </Link>
-          <span className="font-headline font-black tracking-tighter text-xl uppercase hidden sm:block">Sayi Krishna PK</span>
+          <span className="font-headline font-black tracking-tighter text-base sm:text-xl uppercase whitespace-nowrap">
+            Sayi Krishna PK
+          </span>
         </div>
         
         <div className="flex items-center gap-4">
