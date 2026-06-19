@@ -26,7 +26,7 @@ export default function Home() {
           {/* Right Column: Experience, Projects & Contributions */}
           <div className="lg:col-span-8 space-y-20">
             <section id="experience">
-              <div className="flex items-center justify-between mb-12 border-b-2 border-foreground pb-4">
+              <div className="flex items-center justify-between mb-6 border-b-2 border-foreground pb-4">
                 <h2 className="text-xs font-headline uppercase tracking-[0.4em] font-black">Professional Experience</h2>
               </div>
               <ProfessionalExperience />
