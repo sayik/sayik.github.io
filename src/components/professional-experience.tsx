@@ -8,13 +8,25 @@ import { cn } from "@/lib/utils";
 export function ProfessionalExperience() {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const handleToggle = () => {
+    if (isExpanded) {
+      // Find the section element by its ID
+      const element = document.getElementById("experience");
+      if (element) {
+        // Scroll to the element smoothly
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className="space-y-4">
       <div className="relative">
         <div 
           className={cn(
             "prose prose-invert max-w-none font-body text-foreground leading-relaxed text-lg transition-all duration-500 overflow-hidden",
-            !isExpanded && "max-h-[220px]"
+            !isExpanded && "max-h-[320px]"
           )}
         >
           <p className="font-medium mb-4">
@@ -41,7 +53,7 @@ export function ProfessionalExperience() {
 
       <Button
         variant="ghost"
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={handleToggle}
         className="group p-0 h-auto hover:bg-transparent text-primary hover:text-primary/80 font-headline font-black text-xs uppercase tracking-[0.2em] flex items-center gap-2"
       >
         {isExpanded ? (
